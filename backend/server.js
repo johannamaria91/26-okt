@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 1337  // Obs! Fungerar bara lokalt!
 // Middleware - TODO
 app.use(cors());
 // Exempel: static folders, logger
-app.use( express.static(__dirname + '/build') )
+app.use( express.static(__dirname + '/../build') )
 
 // Endpoints
 // app.use om vi har en separat router-fil
