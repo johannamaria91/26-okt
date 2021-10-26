@@ -22,7 +22,7 @@ app.get('/animals', (req, res) => {
 
 //behövs om man använder react router
 app.get('*', (req, res) => {
-    res.send(__dirname + '/build/index.html')
+    res.sendFile(__dirname + '/build/index.html')
 })
 
 app.listen(PORT, () => {
